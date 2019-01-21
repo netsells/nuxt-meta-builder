@@ -8,9 +8,10 @@
     "email": "martin.smith@netsells.co.uk"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "keywords": [
     "nuxt-meta-builder",
     "vue",
