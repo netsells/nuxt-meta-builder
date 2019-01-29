@@ -18,8 +18,8 @@ yarn add @netsells/nuxt-meta-builder
 ## Usage
 
 ```js
-// Pull the plugin in
 <script>
+    // Pull the plugin in
     import MetaBuilder from '@netsells/nuxt-meta-builder';
     
     export default {
@@ -30,7 +30,7 @@ yarn add @netsells/nuxt-meta-builder
                 .setDescription(Description)
                 .make();
         },       
-    }
+    };
 </script>
 ```
 
