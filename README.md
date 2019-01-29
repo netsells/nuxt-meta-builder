@@ -17,7 +17,7 @@ yarn add @netsells/nuxt-meta-builder
 
 ## Usage
 
-```js
+```vue
 <script>
     // Pull the plugin in
     import MetaBuilder from '@netsells/nuxt-meta-builder';
