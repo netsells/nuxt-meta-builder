@@ -1,4 +1,4 @@
-# packages [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# Nuxt Meta Builder [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > meta builder class so that you can build the meta object up in a more fluent way
 
 ## Why?
