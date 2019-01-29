@@ -1,18 +1,41 @@
 # packages [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> martin netsells nuxt
+> meta builder class so that you can build the meta object up in a more fluent way
+
+## Why?
+
+Helps you build up your meta object in a more readable and fluent way.
+You can replace the default meta in the nuxt.config.js file within your nuxt project. 
+
+if you need to change the meta for any template it can be easily imported and used, below is an example of it's usage.
+
 
 ## Installation
 
 ```sh
-$ npm install --save packages
+yarn add @netsells/nuxt-meta-builder
 ```
 
 ## Usage
 
 ```js
-const packages = require('packages');
+// Pull the plugin in
+<script>
+    import MetaBuilder from '@netsells/nuxt-meta-builder';
+    
+    export default {
+        // Basic usage
+        head() {
+            return (new Meta)
+                .setTitle(nameOfTitle)
+                .setDescription(Description)
+                .make();
+        },       
+    }
+</script>
+```
 
-packages('Rainbow');
+```js
+
 ```
 ## License
 
