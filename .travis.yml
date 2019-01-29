@@ -10,6 +10,6 @@ install:
     - npm i
     - npm install -g codecov
 script:
-    - jest --testRegex=.*\\.test\\.js$ && codecov
+    - jest --testRegex=.*\\.test\\.js$ --coverage && codecov
 notifications:
     slack:
