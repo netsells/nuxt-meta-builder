@@ -34,17 +34,14 @@ yarn add @netsells/nuxt-meta-builder
 </script>
 ```
 
-```js
-
-```
 ## License
 
 MIT © [Martin Smith]()
 
 
-[npm-image]: https://badge.fury.io/js/packages.svg
-[npm-url]: https://npmjs.org/package/packages
-[travis-image]: https://travis-ci.org/martin91s/packages.svg?branch=master
-[travis-url]: https://travis-ci.org/martin91s/packages
-[daviddm-image]: https://david-dm.org/martin91s/packages.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/martin91s/packages
+[npm-image]: https://badge.fury.io/js/%40netsells%2Fnuxt-meta-builder.svg
+[npm-url]: https://npmjs.org/package/@netsells/nuxt-meta-builder
+[travis-image]: https://travis-ci.org/netsells/nuxt-meta-builder.svg?branch=master
+[travis-url]: https://travis-ci.org/netsells/nuxt-meta-builder
+[daviddm-image]: https://david-dm.org/netsells/nuxt-meta-builder.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/netsells/nuxt-meta-builder
