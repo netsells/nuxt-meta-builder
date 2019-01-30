@@ -1,13 +1,12 @@
-# Nuxt Meta Builder [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> meta builder class so that you can build the meta object up in a more fluent way
+# Nuxt Meta Builder 
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+
+> A fluent approach to building up the meta data object within a Nuxt project
 
 ## Why?
 
-Helps you build up your meta object in a more readable and fluent way.
-You can replace the default meta in the nuxt.config.js file within your nuxt project. 
-
-if you need to change the meta for any template it can be easily imported and used, below is an example of it's usage.
-
+The standard approach to building up the meta content powered by [vue-meta](https://www.npmjs.com/package/vue-meta) is to manually create an object with keys and values and is often a repeated mess across pages. This approach makes this a bit more readable via fluent methods.
 
 ## Installation
 
@@ -20,23 +19,34 @@ yarn add @netsells/nuxt-meta-builder
 ```vue
 <script>
     // Pull the plugin in
-    import MetaBuilder from '@netsells/nuxt-meta-builder';
+    import Meta from '@netsells/nuxt-meta-builder';
     
     export default {
         // Basic usage
         head() {
             return (new Meta)
-                .setTitle(nameOfTitle)
-                .setDescription(Description)
+                .setTitle('My page title')
+                .setDescription('The description for the current page')
                 .make();
         },       
     };
 </script>
 ```
 
+## Available API Methods
+
+| Method | Description | Arguments |
+| --- | --- | --- |
+| `setDescription` | Set both the `description` and the `og:description` meta data | `val` [required] - the description to set |
+| `setTitle` | Set both the `title` and the `og:title` meta data | `hid` - the title to set<br><br> `content` [optional, default = false] - the title value to set |
+| `addMeta` | Set specific meta values | `hid` [required] - the unique meta tag id to set. Can be an single `string` or an `array` of `string`s<br><br>`content` [required] - the meta value to set |
+| `make` | Generate the resulting object | None. |
+
+Note: All public API methods return the class instance and can be chained, other than the `make` command which returns the final meta object and should be called last.
+
 ## License
 
-MIT © [Martin Smith]()
+MIT © [Netsells](https://www.netsells.co.uk)
 
 
 [npm-image]: https://badge.fury.io/js/%40netsells%2Fnuxt-meta-builder.svg
