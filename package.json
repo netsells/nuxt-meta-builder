@@ -1,6 +1,6 @@
 {
   "name": "@netsells/nuxt-meta-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "meta builder class so that you can build the meta object up in a more fluent way",
   "homepage": "https://github.com/netsells/nuxt-meta-builder",
   "author": {
