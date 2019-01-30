@@ -82,7 +82,7 @@ class Meta {
   limitWords(val, count = 5) {
     const words = (val || '').split(' ');
     const limited = words.concat().splice(0, count);
-    const ellipsis = words.length !== limited.length ? '...' : '';
+    const ellipsis = words.length !== limited.length ? '…' : '';
     return `${limited.join(' ')}${ellipsis}`;
   }
   /**
@@ -98,7 +98,7 @@ class Meta {
   limitLetters(val, count = 155) {
     const letters = (val || '').split('');
     const limited = letters.concat().splice(0, count);
-    const ellipsis = letters.length !== limited.length ? '...' : '';
+    const ellipsis = letters.length !== limited.length ? '…' : '';
     return `${limited.join('')}${ellipsis}`;
   }
   /**
@@ -119,4 +119,3 @@ class Meta {
 
 var _default = Meta;
 exports.default = _default;
-module.exports = {};
