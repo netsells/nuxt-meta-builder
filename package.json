@@ -74,5 +74,5 @@
     "testEnvironment": "node"
   },
   "license": "MIT",
-  "browserslist": "last 2 versions, IE 11"
+  "browserslist": ["last 2 versions", "IE 11"]
 }
