@@ -11,7 +11,7 @@
     "lib",
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "lib/module.js",
   "keywords": [
     "nuxt-meta-builder",
     "vue",
