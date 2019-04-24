@@ -1,6 +1,6 @@
 {
   "name": "@netsells/nuxt-meta-builder",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "meta builder class so that you can build the meta object up in a more fluent way",
   "homepage": "https://github.com/netsells/nuxt-meta-builder",
   "author": {
@@ -74,5 +74,8 @@
     "testEnvironment": "node"
   },
   "license": "MIT",
-  "browserslist": ["last 2 versions", "IE 11"]
+  "browserslist": [
+    "last 2 versions",
+    "IE 11"
+  ]
 }
