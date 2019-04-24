@@ -16,15 +16,26 @@ yarn add @netsells/nuxt-meta-builder
 
 ## Usage
 
+Add the module to your nuxt config's `modules` array:
+
+```js
+module.exports = {
+    ...
+    modules: [
+        '@netsells/nuxt-meta-builder',
+    ],
+    ...
+};
+```
+
+You can then access the `$metaBuilder` function on the Vue instance:
+
 ```vue
 <script>
-    // Pull the plugin in
-    import Meta from '@netsells/nuxt-meta-builder';
-    
     export default {
         // Basic usage
         head() {
-            return (new Meta)
+            return this.$metaBuilder()
                 .setTitle('My page title')
                 .setDescription('The description for the current page')
                 .make();
