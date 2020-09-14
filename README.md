@@ -50,7 +50,7 @@ You can then access the `$metaBuilder` function on the Vue instance:
 | --- | --- | --- |
 | `setDescription` | Set both the `description` and the `og:description` meta data | `val` [required] - the description to set |
 | `setTitle` | Set both the `title` and the `og:title` meta data | `hid` - the title to set<br><br> `content` [optional, default = false] - the title value to set |
-| `addMeta` | Set specific meta values | `hid` [required] - the unique meta tag id to set. Can be an single `string` or an `array` of `string`s<br><br>`content` [required] - the meta value to set |
+| `addMeta` | Set specific meta values | `hid` [required] - the unique meta tag id to set. Can be a single `string` or an `array` of `string`s<br><br>`content` [required] - the meta value to set |
 | `make` | Generate the resulting object | None. |
 
 Note: All public API methods return the class instance and can be chained, other than the `make` command which returns the final meta object and should be called last.
