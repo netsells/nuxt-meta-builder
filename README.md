@@ -4,6 +4,8 @@
 
 > A fluent approach to building up the meta data object within a Nuxt project
 
+Created and maintained by the [Netsells team](https://netsells.co.uk/)
+
 ## Why?
 
 The standard approach to building up the meta content powered by [vue-meta](https://www.npmjs.com/package/vue-meta) is to manually create an object with keys and values and is often a repeated mess across pages. This approach makes this a bit more readable via fluent methods.
