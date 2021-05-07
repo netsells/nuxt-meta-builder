@@ -3,9 +3,8 @@ cache:
     directories:
         - node_modules
 node_js:
+    - v12
     - v10
-    - v8
-    - v6
 install:
     - npm i
     - npm install -g codecov
